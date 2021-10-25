@@ -16,7 +16,8 @@ and put them in scripts preventing the need for google searches.
 
 
 # Pull policy
-* Also if I bother to look in the bash file and see no comments/documentaitions I'm rejecting the request.
+* Please leave documentaition in script that specifies how to use script.
+* Edit readme to describe dependencies of script and a brief description of what it does.
 
 # convert2Mp4
 * This script requires you have ffmpeg installed.
