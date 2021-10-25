@@ -1,0 +1,19 @@
+#!/bin/bash
+#!/usr/bin/env bash
+
+
+ffmpeg -i $1 -c:v libx264 -c:a aac your.mp4
+
+# 'DOCSTRING' 
+# convertToMp4 short for given video file to Mp4 codec
+# Takes two parameters
+# param1: The direct path to the file you wish to convert.
+# no-param2: its new name as an mp4 file.  Must have .mp4 as file extension or might break :(
+# 	Actually I removed the need for a second parameter. The script spits out an Mp4 I specify
+# 	so mean users can't break this script and say I'm bad at programming :((.
+# 	That's how its going to be for the mean.
+# 	If you want to experiment with a version of the script and see if the command will
+# 	convert to other formats replace "your.mp4" with $2 and try it out. I don't mind
+# 	as long as you don't push a version to main that breaks the build.
+#   Also I couldn't get multi line comments to behave so this had to suffice.
+# >>
