@@ -21,3 +21,30 @@ and put them in scripts preventing the need for google searches.
 # convert2Mp4
 * This script requires you have ffmpeg installed.
 * It takes the path to a video file and returns an .mp4 version.
+
+## These functions have to do with sourceing your ROS workspaces
+**WARNING**
+* Some of these scripts are dangerous if you don't follow precautions and follow instructions.
+* Could result in loosing your .bashrc file.
+* This warning remains in effect until I can improve the scripts.
+* These scripts edit your .bashrc.  In order to look at your .bashrce use this command: `cat .bashrc`
+
+# sourceWS
+* This script sources a workspace that you specify.  
+* It follows this form: `bash sourceWS {$name_of_workspace}`
+
+# wsSourceRemove
+* This script is suppose to remove the line that sources your workspace after finishing a project.
+* *NOTE* 
+    - All it does is remove the last line of the bashrc and does not target specific files.
+    - It does not target added source lines.
+    - This means you should run this script before starting a new project.
+    - Also it creates a backup of the .bashrc incase you mess up, but it does this every time the script is run. This means you can eventually reduce your .bashrc down to nothing.
+
+
+# buBashrc
+* This script creates a backup of .bashrc file.
+* This script is executed in `wsSourceRemove` and can be run on its own.
+
+# rBashrc
+* This script copies your backup .bashrc onto your .bashrc
