@@ -16,11 +16,13 @@ and put them in scripts preventing the need for google searches.
 
 
 # Pull policy
-* Also if I bother to look in the bash file and see no comments/documentaitions I'm rejecting the request.
+* Please leave documentaition in script that specifies how to use script.
+* Edit readme to describe dependencies of script and a brief description of what it does.
 
 # convert2Mp4
 * This script requires you have ffmpeg installed.
 * It takes the path to a video file and returns an .mp4 version.
+<<<<<<< HEAD
 
 ## These functions have to do with sourceing your ROS workspaces
 **WARNING**
@@ -48,3 +50,5 @@ and put them in scripts preventing the need for google searches.
 
 # rBashrc
 * This script copies your backup .bashrc onto your .bashrc
+=======
+>>>>>>> 8295be71e3c473067892b279d4415855e2b966e9
