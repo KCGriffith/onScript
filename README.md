@@ -19,10 +19,21 @@ and put them in scripts preventing the need for google searches.
 * Please leave documentaition in script that specifies how to use script.
 * Edit readme to describe dependencies of script and a brief description of what it does.
 
+## Script Descriptions and Instructions
+
 # convert2Mp4
 * This script requires you have ffmpeg installed.
 * It takes the path to a video file and returns an .mp4 version.
-<<<<<<< HEAD
+
+# makeSDF
+* Takes the name of a urdf.xacro file and converts it into a urdf and sdf
+**Instructions**
+* Call the script as follows: `bash makeSDF ${name_of_urdf.xacro_file}`
+* *Note:* Do not include the file extention in the name of the file.
+* *Example:* If the name of your urdf.xacro file is `myRobot.urdf.xacro` then 
+you would write `myRobot`.  Thus your call would look like: `bash makeSDF myRobot`
+* Also note that if you are not in the directory of the urdf.xacro file then you will want to include the path
+in your call to the script.
 
 ## These functions have to do with sourceing your ROS workspaces
 **WARNING**
@@ -50,5 +61,3 @@ and put them in scripts preventing the need for google searches.
 
 # rBashrc
 * This script copies your backup .bashrc onto your .bashrc
-=======
->>>>>>> 8295be71e3c473067892b279d4415855e2b966e9

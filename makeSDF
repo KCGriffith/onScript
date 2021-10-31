@@ -1,0 +1,5 @@
+#!/bin/bash
+#!/usr/bin/env bash
+
+xacro ./$1.urdf.xacro > ./$1.urdf
+gz sdf -p ./$1.urdf > ./$1.sdf
